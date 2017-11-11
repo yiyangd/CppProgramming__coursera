@@ -1,10 +1,3 @@
-//
-//  main.cpp
-//  week10
-//
-//  Created by 董亦杨 on 2017/11/10.
-//  Copyright © 2017年 董亦杨. All rights reserved.
-//
 
 #include <iostream>
 #include <string>
