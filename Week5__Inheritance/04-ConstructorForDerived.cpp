@@ -2,6 +2,7 @@
 #include <string>
 using namespace std;
 
+
 class Bug
 {
 private:
@@ -13,14 +14,20 @@ public:
     ~Bug(){cout<<"Base destructed"<<endl;};
 };
 
+class Skill
+{
+public:
+    Skill(int n){}
+};
+
 class FlyBug:public Bug{
     int nWings;
+    Skill sk1,sk2;
 public:
     FlyBug(int legs, int color, int wings);
     ~FlyBug(){cout<<"derived destructed"<<endl;};
     
 };
-
 
 Bug::Bug(int legs, int color)   // constructor for base class
 {
@@ -29,7 +36,7 @@ Bug::Bug(int legs, int color)   // constructor for base class
     cout << "Base Constructed"<<endl;
 }
 
-FlyBug::FlyBug(int legs, int color, int wings):Bug(legs,color)  // constructor for derived class
+FlyBug::FlyBug(int legs, int color, int wings):Bug(legs,color),sk1(5),sk2(color)  // constructor for bace class as well as derived class(Skill sk1,sk2)
 {
     nWings = wings;
     cout << "Derived Constructed"<<endl;
