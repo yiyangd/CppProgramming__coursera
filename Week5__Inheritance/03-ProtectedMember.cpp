@@ -30,7 +30,7 @@ int main(int argc, const char * argv[]) {
     f.nPublic = 1;
     s.nPublic = 1;
     s.AccessFather(); //!! fuctions from derived class could access protected member in base class
-    
+                      // As for private members in base class, they cannot be accessed by functions from derived class
     system("pause");
     return 0;
 }
