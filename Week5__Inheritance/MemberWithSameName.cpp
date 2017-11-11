@@ -20,7 +20,7 @@ public:
 
 void derived::access()
 {
-    j = 5; //error! private member from base class only could be accessed by its public/friend function
+    j = 5; //error! private member from base class cannot be accessed by functions from derived class!!!
     
     i = 5; // i from derived class
     base::i = 5; // i from base class
